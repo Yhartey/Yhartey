@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animated Search Bar</title>
+    <style>
+        body{
+            background: radial-gradient(#ab8c93, #993239);
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    	input{
+            font-family: verdana;
+    		margin-top: 3em;
+    		width: 50%;
+    		height: 30px;
+    		transition: width 0.2s ease-in, border-radius, 0.4s linear;
+    	}
+    	input:focus{
+    		width: 80%;
+    		border-radius: 10px;
+    		border: #ffaaaa solid 5px
+    	}
+    </style>
+    <script>
+		function js () {
+			x=document.getElementById("name") .value;
+			alert("I don't think your name is in our library. Bye for now, " + x)
+		}
+	</script>
+</head>
+
+<body>
+	<h1>Click the input field to see effect</h1>
+	<span style="font-family: verdana">Drop your name to hear some fun facts</span>
+    <input id="name" placeholder="Type in a search term" onblur="js()">
+    </body>
+
+</html>

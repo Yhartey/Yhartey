@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+    /* line breaks at whitespaces. so use &nbsp in text to type-effect*/
+    * {
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #000;
+        color: #fff;
+    }
+
+    h1 {
+        font-weight: 700;
+    }
+
+    .typing h1 {
+        overflow: hidden;
+        border-right: 2px solid white;
+        margin: 0;
+        animation: abc 2.6s steps(30, end);
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes abc {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="typing">
+        <h1 style="color:#09FE00FF">My&nbsp;name&nbsp;is&nbsp;@Yhartey_Dives&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+    </div>
+</body>
+
+</html>
